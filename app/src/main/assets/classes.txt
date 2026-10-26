@@ -1,0 +1,6 @@
+smartphone
+laptop
+crt
+battery_liion
+battery_alkaline
+flat_panel_monitor

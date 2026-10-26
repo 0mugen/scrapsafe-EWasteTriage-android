@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">E-Waste Triage</string>
+    <string name="camera_permission_required">Camera permission is required to scan e-waste</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="scanning">Scanning…</string>
+    <string name="nothing_found">Nothing detected – this does not mean the item is safe</string>
+</resources>

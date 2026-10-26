@@ -1,0 +1,228 @@
+{
+  "smartphone": {
+    "display_name": "Smartphone",
+    "danger": false,
+    "composition": "Glass/metal/plastic casing, LCD or OLED display, printed circuit board (PCB), lithium-ion battery, copper wiring, small speakers/microphones and camera modules.",
+    "verify_hint": "Confirm it is a phone, not a laptop or tablet, before using this guidance.",
+    "always_verify": true,
+    "reusable": [
+      {"name": "Display (LCD/OLED)", "note": "Often refurbishable for repair markets; otherwise recyclable."},
+      {"name": "Camera module", "note": "Working modules can be salvaged for repair or reuse."},
+      {"name": "Circuit board metals", "note": "Recoverable copper, gold and silver traces."},
+      {"name": "Casing (metal/plastic)", "note": "Aluminium and plastic can be separated and recycled."},
+      {"name": "Speakers / microphones", "note": "Small parts reusable in refurbishing."}
+    ],
+    "harmful": [
+      {
+        "name": "Lithium-ion battery",
+        "risk": "Fire or explosion risk if punctured, bent or crushed (thermal runaway).",
+        "handling": "Do not puncture or bend. Remove carefully, tape the terminals, store separately in a fire-safe container.",
+        "severity": "HIGH",
+        "type": "FIRE"
+      },
+      {
+        "name": "Leaded solder on PCB",
+        "risk": "Lead exposure if the board is burned, ground or crushed without protection.",
+        "handling": "Do not burn or grind. Wear gloves and send boards to a certified e-waste recycler.",
+        "severity": "MEDIUM",
+        "type": "TOXIC"
+      },
+      {
+        "name": "Older CCFL backlights (pre-~2012 models)",
+        "risk": "Trace mercury exposure if the display is shattered.",
+        "handling": "Avoid breaking the screen; treat as hazardous waste if the model is old.",
+        "severity": "LOW",
+        "type": "TOXIC"
+      }
+    ]
+  },
+  "laptop": {
+    "display_name": "Laptop",
+    "danger": false,
+    "composition": "Plastic/magnesium/aluminium casing, LCD panel (CCFL- or LED-backlit), lithium-ion battery pack, motherboard (PCB) with leaded or lead-free solder, capacitors, RAM, SSD/HDD, fan and heat sink, keyboard, charger and copper wiring.",
+    "verify_hint": "Confirm it is a laptop, not a large phone or tablet, before using this guidance.",
+    "always_verify": false,
+    "reusable": [
+      {"name": "RAM and SSD/HDD", "note": "Commonly reusable. Wipe or destroy drives first - they hold personal data."},
+      {"name": "Display panel", "note": "Refurbishable for repair markets."},
+      {"name": "Keyboard, hinges, charger", "note": "Reusable as spare parts."},
+      {"name": "Heat sink / fan (copper, aluminium)", "note": "Recyclable metals."},
+      {"name": "Motherboard metals", "note": "Recoverable copper, gold and silver."}
+    ],
+    "harmful": [
+      {
+        "name": "Lithium-ion battery pack",
+        "risk": "Fire risk if punctured, crushed or shorted. Swelling means it is already unstable.",
+        "handling": "Disconnect and remove the pack first. Never pry it with metal tools. Check for swelling; store separately.",
+        "severity": "HIGH",
+        "type": "FIRE"
+      },
+      {
+        "name": "Leaded solder on motherboard",
+        "risk": "Lead exposure if burned, ground or heated.",
+        "handling": "Do not burn or desolder without ventilation and protection. Send boards to a certified recycler.",
+        "severity": "MEDIUM",
+        "type": "TOXIC"
+      },
+      {
+        "name": "Mercury backlight (older CCFL screens)",
+        "risk": "Mercury vapour if the lamp breaks.",
+        "handling": "Do not break the display. Treat older screens as hazardous waste.",
+        "severity": "MEDIUM",
+        "type": "TOXIC"
+      },
+      {
+        "name": "Capacitors and brominated flame-retardant plastics",
+        "risk": "Capacitors can leak or hold charge; some plastics release toxic fumes if burned.",
+        "handling": "Never burn casings. Handle with gloves.",
+        "severity": "LOW",
+        "type": "ELECTRICAL"
+      }
+    ]
+  },
+  "crt": {
+    "display_name": "CRT Monitor / TV",
+    "danger": true,
+    "composition": "Evacuated glass tube (leaded funnel and front panel glass), phosphor coating, electron gun, high-voltage circuitry, large capacitors, PCBs with leaded solder, plastic casing with copper wiring.",
+    "verify_hint": "Check for a deep, bulky back and curved glass. A thin screen is a flat panel, not a CRT.",
+    "always_verify": true,
+    "reusable": [
+      {"name": "Copper yoke and wiring", "note": "Recoverable copper."},
+      {"name": "Casing and steel frame", "note": "Plastic and steel can be recycled once the tube is removed."},
+      {"name": "Circuit boards", "note": "Recoverable metals via a certified recycler."}
+    ],
+    "harmful": [
+      {
+        "name": "Vacuum glass tube (implosion risk)",
+        "risk": "A cracked tube can implode and throw glass shards.",
+        "handling": "Never drop, strike or crack it. Wear eye protection and gloves.",
+        "severity": "HIGH",
+        "type": "GLASS"
+      },
+      {
+        "name": "Leaded glass and phosphor dust",
+        "risk": "Lead and other toxic dust if the glass breaks or is crushed.",
+        "handling": "Never smash or crush. Keep intact and hand over to a certified CRT recycler.",
+        "severity": "HIGH",
+        "type": "TOXIC"
+      },
+      {
+        "name": "High-voltage stored charge",
+        "risk": "Capacitors and the tube anode can hold a dangerous charge even when unplugged.",
+        "handling": "Do not open the casing unless you are trained to discharge it safely.",
+        "severity": "HIGH",
+        "type": "ELECTRICAL"
+      },
+      {
+        "name": "Leaded solder and flame-retardant plastics",
+        "risk": "Toxic if burned or ground.",
+        "handling": "Do not burn. Send boards and plastics to certified recyclers.",
+        "severity": "MEDIUM",
+        "type": "TOXIC"
+      }
+    ]
+  },
+  "battery_liion": {
+    "display_name": "Battery - Lithium-ion",
+    "danger": true,
+    "composition": "Lithium metal-oxide cathode, graphite anode, flammable liquid electrolyte, metal or foil pouch casing.",
+    "verify_hint": "Look at the pack from the side: any bulge means treat it as swollen and unstable.",
+    "always_verify": true,
+    "reusable": [
+      {"name": "Metal casing / current collectors", "note": "Aluminium and copper foils can be recovered."},
+      {"name": "Cobalt, nickel, lithium", "note": "Recoverable through specialised battery recycling."}
+    ],
+    "harmful": [
+      {
+        "name": "Flammable electrolyte",
+        "risk": "Can ignite if the cell is punctured, overheated, bent or short-circuited.",
+        "handling": "Never puncture or crush. Tape terminals, keep away from metal objects and heat.",
+        "severity": "HIGH",
+        "type": "FIRE"
+      },
+      {
+        "name": "Heavy metals (cobalt, nickel)",
+        "risk": "Toxic if burned or disposed of improperly.",
+        "handling": "Never incinerate. Use certified battery / e-waste collection.",
+        "severity": "MEDIUM",
+        "type": "TOXIC"
+      },
+      {
+        "name": "Hidden swelling",
+        "risk": "A bulging pack can look normal from one angle.",
+        "handling": "Before handling, look at the pack from the side and check whether it sits flat on a table.",
+        "severity": "HIGH",
+        "type": "FIRE"
+      }
+    ]
+  },
+  "battery_alkaline": {
+    "display_name": "Battery - Cylindrical Cell (possibly alkaline)",
+    "danger": false,
+    "composition": "If alkaline: zinc anode, manganese dioxide cathode, potassium hydroxide electrolyte, steel casing. The camera cannot tell chemistry from shape: rechargeable lithium-ion cylinders look similar and are far more hazardous.",
+    "verify_hint": "Read the label: if it says Li-ion, rechargeable or 3.7V, treat it as lithium-ion.",
+    "always_verify": true,
+    "reusable": [
+      {"name": "Steel casing", "note": "Recyclable as scrap steel."},
+      {"name": "Zinc / manganese", "note": "Recoverable through some battery recycling streams."}
+    ],
+    "harmful": [
+      {
+        "name": "Chemistry NOT confirmed by the camera",
+        "risk": "A rechargeable Li-ion cylinder can look like an AA/AAA cell but can ignite if punctured, crushed or shorted.",
+        "handling": "Read the label first. If it says Li-ion, rechargeable, 3.6V/3.7V/4.2V or shows a high mAh value, treat it as a lithium-ion cell.",
+        "severity": "HIGH",
+        "type": "FIRE"
+      },
+      {
+        "name": "Potassium hydroxide electrolyte",
+        "risk": "Corrosive if the casing leaks; irritates skin and eyes.",
+        "handling": "Avoid puncturing. Wash hands after handling a leaking cell.",
+        "severity": "MEDIUM",
+        "type": "CORROSIVE"
+      },
+      {
+        "name": "Trace heavy metals (older units)",
+        "risk": "Minor contamination risk if landfilled in bulk.",
+        "handling": "Prefer a battery collection point over regular trash.",
+        "severity": "LOW",
+        "type": "TOXIC"
+      }
+    ]
+  },
+  "flat_panel_monitor": {
+    "display_name": "Flat-panel Screen / TV",
+    "danger": false,
+    "composition": "LCD or LED panel (glass layers, liquid crystal, polarising films), backlight (CCFL tubes in older units, LEDs in newer ones), driver and power-supply circuit boards with capacitors, plastic housing with flame retardants, metal frame and cables.",
+    "verify_hint": "If the unit is deep and bulky with curved glass, treat it as a CRT instead.",
+    "always_verify": true,
+    "reusable": [
+      {"name": "Metal frame and stand", "note": "Steel and aluminium are recyclable."},
+      {"name": "Power-supply board and cables", "note": "Often reusable as spares; copper is recoverable."},
+      {"name": "Panel (if intact)", "note": "Can be refurbished or reused in repair markets."}
+    ],
+    "harmful": [
+      {
+        "name": "Mercury backlight (older CCFL-lit screens)",
+        "risk": "Mercury vapour if the lamp tubes break.",
+        "handling": "Do not crush or break the panel. Treat older LCDs as hazardous waste.",
+        "severity": "MEDIUM",
+        "type": "TOXIC"
+      },
+      {
+        "name": "Leaded solder and capacitors",
+        "risk": "Lead exposure if burned or ground; capacitors can hold a charge.",
+        "handling": "Do not burn or grind. Wear gloves and recycle boards through certified channels.",
+        "severity": "MEDIUM",
+        "type": "ELECTRICAL"
+      },
+      {
+        "name": "Broken glass",
+        "risk": "Cracked panels can cut and release internal materials.",
+        "handling": "Wear gloves and eye protection; never handle cracked panels bare-handed.",
+        "severity": "MEDIUM",
+        "type": "GLASS"
+      }
+    ]
+  }
+}

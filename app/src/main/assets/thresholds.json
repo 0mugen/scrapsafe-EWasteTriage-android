@@ -1,0 +1,13 @@
+{
+  "detector_floor": 0.20,
+  "default_min": 0.35,
+  "default_confident": 0.60,
+  "class_min": {
+    "crt": 0.45
+  },
+  "class_confident": {
+    "crt": 0.75
+  },
+  "smooth_window": 5,
+  "smooth_needed": 3
+}

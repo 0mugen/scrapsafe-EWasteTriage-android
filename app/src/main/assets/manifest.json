@@ -1,0 +1,19 @@
+{
+  "app_name": "Hazard-Aware E-Waste Triage Assistant",
+  "version": "1.0.0",
+  "model_version": "ewaste_v2 (fine-tuned)",
+  "model_file": "best.tflite",
+  "input_resolution": "640x640",
+  "guidance_version": "2024.1-curated",
+  "review_date": "October 2024",
+  "offline_mode": true,
+  "supported_classes": [
+    "smartphone",
+    "laptop",
+    "crt",
+    "battery_liion",
+    "battery_alkaline",
+    "flat_panel_monitor"
+  ],
+  "disclaimer": "This system provides guidance for common electronic waste items. No supported hazard detected does not imply that an electronic device is safe to handle. Internal batteries, high-voltage CRT anode charges, and mercury backlights require professional protective measures."
+}
